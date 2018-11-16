@@ -5,14 +5,14 @@ Province Picker
 
 ## Getting Started
 
-###dependency
+### dependency
 ```
 province_provider:
     git:
       url: git@github.com:skeyboy/provinece_picker.git
       tag: 0.0.1
 ```
-###init
+### init
 ```
 
 import 'package:province_provider/province_provider.dart';
@@ -38,7 +38,7 @@ ProvinceProvider provinceProvider = new ProvinceProvider();
    }
 
 ```
-###Call
+### Call
 ```
 Future<void> show() async {
 String platformVersion = "None";
@@ -55,5 +55,5 @@ setState(() {
           ),
 ```
 
-###show
+### show
 !["预览图片"](./snapshot/WX20181116-121952@2x.png)
