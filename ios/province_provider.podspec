@@ -15,7 +15,7 @@ Province Picker
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.resource_bundles = {
-      'LoginPart' => ["Classes/**/*.xib","Assets/**/*.json"]
+      'Assets' => ["Classes/**/*.xib","Assets/**/*.json"]
   }
   s.dependency 'Flutter'
 
