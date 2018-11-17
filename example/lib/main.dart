@@ -46,7 +46,7 @@ String platformVersion = "None";
 
 final dynamic result = await provinceProvider.showProvinceProvider("选择籍贯");
 setState(() {
-  _platformVersion = "$locationInfo";
+  _platformVersion = "$locationInfo $result";
 });
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling

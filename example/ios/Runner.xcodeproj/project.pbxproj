@@ -12,6 +12,9 @@
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53007CA3219FA88B00759DE5 /* ProvinceProviderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53007CA1219FA88B00759DE5 /* ProvinceProviderController.swift */; };
+		53007CA4219FA88B00759DE5 /* ProvinceProviderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53007CA2219FA88B00759DE5 /* ProvinceProviderController.xib */; };
+		53007CA6219FAA1900759DE5 /* ProvincePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53007CA5219FAA1900759DE5 /* ProvincePickerViewModel.swift */; };
 		7044D1BC1FE7A0E1DE90E824 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCE0E043F7C8D3E2DD198EC /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
@@ -43,6 +46,9 @@
 		2D5378251FAA1A9400D5DBA9 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = Flutter/flutter_assets; sourceTree = SOURCE_ROOT; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+		53007CA1219FA88B00759DE5 /* ProvinceProviderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProvinceProviderController.swift; path = ../../../ios/Classes/ProvinceProviderController.swift; sourceTree = "<group>"; };
+		53007CA2219FA88B00759DE5 /* ProvinceProviderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProvinceProviderController.xib; path = ../../../ios/Classes/ProvinceProviderController.xib; sourceTree = "<group>"; };
+		53007CA5219FAA1900759DE5 /* ProvincePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProvincePickerViewModel.swift; path = ../../../ios/Classes/ProvincePickerViewModel.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				97C147021CF9000F007C117D /* Info.plist */,
 				97C146F11CF9000F007C117D /* Supporting Files */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				53007CA1219FA88B00759DE5 /* ProvinceProviderController.swift */,
+				53007CA2219FA88B00759DE5 /* ProvinceProviderController.xib */,
+				53007CA5219FAA1900759DE5 /* ProvincePickerViewModel.swift */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
@@ -206,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				53007CA4219FA88B00759DE5 /* ProvinceProviderController.xib in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
@@ -238,7 +248,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
-				"${PODS_ROOT}/../.symlinks/flutter/ios-release/Flutter.framework",
+				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
 				"${BUILT_PRODUCTS_DIR}/province_provider/province_provider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -290,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53007CA6219FAA1900759DE5 /* ProvincePickerViewModel.swift in Sources */,
+				53007CA3219FA88B00759DE5 /* ProvinceProviderController.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
