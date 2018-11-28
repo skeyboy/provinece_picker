@@ -27,7 +27,14 @@ public class SwiftProvinceProviderPlugin: NSObject, FlutterPlugin {
         self.provinceProvider.arguments = call.arguments
 //        channel.invokeMethod("provinceResult", arguments: ["type":"province","value":["province":"AAA","city":"BBB","school":"CCC"]])
         self.provinceProvider.view.backgroundColor = UIColor.clear
-        ( UIApplication.shared.delegate as! FlutterAppDelegate).window.rootViewController?.present(self.provinceProvider, animated: true, completion: {
+        
+        var topVC: UIViewController? = nil
+        if ( UIApplication.shared.delegate as! FlutterAppDelegate).window.rootViewController!.isKind(of: UINavigationController.classForCoder()) {
+            topVC = ( ( UIApplication.shared.delegate as! FlutterAppDelegate).window.rootViewController as! UINavigationController).topViewController!.presentedViewController
+        }else{
+             topVC =  ( UIApplication.shared.delegate as! FlutterAppDelegate).window.rootViewController!.presentedViewController
+        }
+       topVC!.presentedViewController?.present(self.provinceProvider, animated: true, completion: {
             
         })
     }else{

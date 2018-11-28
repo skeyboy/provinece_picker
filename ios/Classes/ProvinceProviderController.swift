@@ -37,9 +37,9 @@ self.view.backgroundColor = UIColor.clear
 print(error)
         }
     }
-    override func loadView() {
-        self.view = Bundle.main.loadNibNamed("ProvinceProviderController", owner: self, options: nil)?.first as! UIView
-    }
+//    override func loadView() {
+//        self.view = Bundle.main.loadNibNamed("ProvinceProviderController", owner: self, options: nil)?.first as! UIView
+//    }
     @IBAction func provicerCancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
